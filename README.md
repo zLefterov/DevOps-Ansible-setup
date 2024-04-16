@@ -1,8 +1,8 @@
 # DevOps-Ansible-setup
 Ansible Deployment Scripts for Nginx and PostgreSQL: A collection of Ansible playbooks for automated setup and configuration of Nginx web servers and PostgreSQL databases on Linux servers. Perfect for rapid deployments and consistent configurations across environments.
-Creating a comprehensive `README.md` for your GitHub repository is essential for guiding users through your project. Below is a sample `README.md` for your Ansible deployment repository that installs Nginx and PostgreSQL. This README includes an introduction, prerequisites, installation instructions, usage examples, and more.
+Below is a sample `README.md` for Ansible deployment repository that installs Nginx and PostgreSQL. This README includes an introduction, prerequisites, installation instructions, usage examples, and more.
 
-### Sample README.md Content
+### README.md Content
 
 ```markdown
 # Ansible Deployment Scripts for Nginx and PostgreSQL
@@ -22,8 +22,8 @@ Before you begin, ensure you have the following installed on your local machine:
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/ansible-deployment.git
-cd ansible-deployment
+git clone https://github.com/zLefterov/DevOps-Ansible-setup.git
+cd DevOps-Ansible-setup
 ```
 
 Install required Python packages:
@@ -38,8 +38,8 @@ Update the `inventory/inventory.ini` file with the IP addresses and credentials 
 
 ```
 [servers]
-web-server ansible_host=192.168.78.5 ansible_user=zhl-admin ansible_ssh_private_key_file=/path/to/your/ssh/key
-database-server ansible_host=192.168.78.6 ansible_user=zhl-admin ansible_ssh_private_key_file=/path/to/your/ssh/key
+web-server ansible_host=192.168.X.5 ansible_user=Your_Admin_User_for_the_server ansible_ssh_private_key_file=/path/to/your/ssh/key
+database-server ansible_host=192.168.X.6 ansible_user=Your_Admin_User_for_the_server ansible_ssh_private_key_file=/path/to/your/ssh/key
 ```
 
 ## Running the Playbooks
