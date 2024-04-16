@@ -1,0 +1,16 @@
+---
+- name: Update and Upgrade All Servers
+  hosts: servers
+  become: yes
+
+  tasks:
+  - name: Update apt cache
+    ansible.builtin.apt:
+      update_cache: yes
+      cache_valid_time: 360
+
+  - name: Upgrade all packages to the latest version
+    ansible.builtin.apt:
+      upgrade: dist
+      autoremove: yes
+      autoclean: yes
